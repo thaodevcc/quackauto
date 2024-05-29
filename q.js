@@ -33,7 +33,7 @@ async function getTotalEgg() {
   } catch (error) {
     // console.log("getTotalEgg", error);
     console.log("Mat ket noi getTotalEgg, thu lai sau 3s");
-    setTimeout(getTotalEgg, 3e3);
+    setTimeout(getTotalEgg, 1000);
   }
 }
 
@@ -78,7 +78,7 @@ async function getListCollectEgg() {
   } catch (error) {
     // console.log("getListCollectEgg error:", error);
     console.log("Mat ket noi getListCollectEgg, thu lai sau 3s");
-    setTimeout(getListCollectEgg, 3e3);
+    setTimeout(getListCollectEgg, 1000);
   }
 }
 
@@ -109,7 +109,7 @@ async function collect() {
   } catch (error) {
     // console.log("collect error:", error);
     console.log("Mat ket noi collect, thu lai sau 3s");
-    setTimeout(collect, 3e3);
+    setTimeout(collect, 1000);
   }
 }
 
@@ -152,14 +152,14 @@ async function layEgg(egg, duck) {
       console.log(`Da thu thap 🥚 ${egg.id}`);
       listColect.shift();
       listDuck = listDuck.filter((d) => d.id !== duck.id);
-      setTimeout(collect, 3e3);
+      setTimeout(collect, 1000);
     }
   } catch (error) {
     // console.log("layEgg error:", error);
     console.log("Mat ket noi layEgg, thu lai sau 3s");
     setTimeout(() => {
       layEgg(egg, duck);
-    }, 3e3);
+    }, 1000);
   }
 }
 
@@ -196,7 +196,7 @@ async function getGoldDuckInfo() {
   } catch (error) {
     // console.log("getGoldDuckInfo error", error);
     console.log("Mat ket noi getGoldDuckInfo, thu lai sau 3s");
-    setTimeout(getGoldDuckInfo, 3e3);
+    setTimeout(getGoldDuckInfo, 1000);
   }
 }
 
@@ -267,6 +267,6 @@ async function claimGoldDuck(gDuck) {
   } catch (error) {
     // console.log("claimGoldDuck error", error);
     console.log("Mat ket noi claimGoldDuck, thu lai sau 3s");
-    setTimeout(claimGoldDuck, 3e3);
+    setTimeout(claimGoldDuck, 2000);
   }
 }
