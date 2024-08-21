@@ -1,11 +1,12 @@
-#collet egg 
 
-#egg.py
+# collet egg 
 
-##egg là code con game tele coinegg bot
+# egg.py
 
--link ref https://t.me/coinegg_miner_bot/miniapp?startapp=kBNoWEHfEAAuxXLeawX
+## egg là code con game tele coinegg bot
 
--CoinEgg, where you can earn money for free! Raise chickens, earn USDT. Come claim your chicken farm now, while supplies last!
+- link ref https://t.me/coinegg_miner_bot/miniapp?startapp=kBNoWEHfEAAuxXLeawX
 
-thay token của ae vào token là được bản này chỉ chạy được 1 token thôi
+- CoinEgg, where you can earn money for free! Raise chickens, earn USDT. Come claim your chicken farm now, while supplies last!
+- git clone https://github.com/thaodevcc/quackauto
+- thay token của ae vào token là được bản này chỉ chạy được 1 token thôi
