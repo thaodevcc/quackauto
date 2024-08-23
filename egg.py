@@ -51,7 +51,7 @@ while True:
                             rescollet = requests.post(urlcollet, headers=headers, json={"egg_uid": test, "token": payload["token"]})
                             rescollet_data = rescollet.json()
                             print(f"trứng: {rescollet_data.get('data', {}).get('assets', {}).get('egg', {}).get('amount', 'N/A')}")
-                            ]]'print(f"usdt: {rescollet_data.get('data', {}).get('assets', {}).get('usdt', {}).get('amount', 'N/A')}")
+                            print(f"usdt: {rescollet_data.get('data', {}).get('assets', {}).get('usdt', {}).get('amount', 'N/A')}")
                             time.sleep(5)
                         else:
                             print("Không tìm thấy UID trứng, bỏ qua...")
