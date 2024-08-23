@@ -1,6 +1,6 @@
 import requests
 import time
-from colorama import Fore, Back,Style
+
 import threading
 # URL để gửi yêu cầu
 url = "https://egg-api.hivehubs.app/api/scene/info"
@@ -47,11 +47,11 @@ while True:
                         test = egg.get('uid')
                         
                         if test:
-                            print(Fore.BLACK+"id", test)
+                            
                             rescollet = requests.post(urlcollet, headers=headers, json={"egg_uid": test, "token": payload["token"]})
                             rescollet_data = rescollet.json()
-                            print(Fore.RED + f"trứng: {rescollet_data.get('data', {}).get('assets', {}).get('egg', {}).get('amount', 'N/A')}")
-                            print(Fore.RED + f"usdt: {rescollet_data.get('data', {}).get('assets', {}).get('usdt', {}).get('amount', 'N/A')}")
+                            print(f"trứng: {rescollet_data.get('data', {}).get('assets', {}).get('egg', {}).get('amount', 'N/A')}")
+                            ]]'print(f"usdt: {rescollet_data.get('data', {}).get('assets', {}).get('usdt', {}).get('amount', 'N/A')}")
                             time.sleep(5)
                         else:
                             print("Không tìm thấy UID trứng, bỏ qua...")
@@ -59,7 +59,7 @@ while True:
                 else:
                     print("loading....")
                     time.sleep(80)
-                    print(Fore.GREEN+"loading....")
+                    print("loading....")
         else:
             print("API Error:")
     
